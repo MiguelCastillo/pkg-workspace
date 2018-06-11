@@ -1,0 +1,20 @@
+{
+  "name": "@generic-bucket/pkg-workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "publish": "yarn run build:all && lerna publish",
+    "build:all": "echo \"build all\"",
+    "postinstall": "yarn run build:all",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^2.11.0",
+    "yarn": "^1.7.0"
+  },
+  "private": true,
+  "workspaces": ["packages/*"]
+}
